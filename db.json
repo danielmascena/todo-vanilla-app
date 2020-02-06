@@ -1,20 +1,31 @@
 {
-    "posts": [{
-        "id": 1,
-        "title": "json-server",
-        "author": "typicode"
-    }],
-    "comments": [{
-        "id": 1,
-        "body": "some comment",
-        "postId": 1
-    }],
-    "profile": {
-        "name": "typicode"
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "todos": [
+    {
+      "id": 1,
+      "title": "First Todo",
+      "done": false
     },
-    "todos": [{
-        "id": 1,
-        "title": "First Todo",
-        "done": false
-    }]
+    {
+      "id": 2,
+      "title": "learn JavaScript",
+      "done": false
+    }
+  ]
 }

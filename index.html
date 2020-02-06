@@ -1,47 +1,54 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>To-Do App</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Todo Vanilla App</h1>
+      <h1>Todo Vanilla App</h1>
     </header>
     <nav>
-        <ul>
-            <li>
-                <a href="">Home</a>
-                <a href="">About</a>
-                <a href="">Github</a>
-            </li>
-        </ul>
+      <ul>
+        <li>
+          <a href="">Home</a>
+          <a href="">About</a>
+          <a href="">Github</a>
+        </li>
+      </ul>
     </nav>
     <main>
-        <section>
-            <article>
-                <h1>Todo Form</h1>
-                <form>
-                    <fieldset>
-                        <legend>My Todo</legend>
-                        <div>
-                            <label>Title</label>
-                        </div>
-                    </fieldset>
-                </form>
-            </article>
-            <article>
-                <h1>Todo list</h1>
-                <p id="todos"></p>
-            </article>
-            <button onclick="getTodos()">Get Todos</button>
-        </section>
+      <section>
+        <article>
+          <h1>Todo Form</h1>
+          <form name="todo-form" onsubmit="setTodo(this)">
+            <fieldset>
+              <legend>My Todo</legend>
+              <div>
+                <label>Title</label>
+                <input
+                  type="text"
+                  name="title"
+                  placeholder="Enter your task name here"
+                  required
+                />
+              </div>
+              <div>
+                <input type="submit" value="Create" />
+              </div>
+            </fieldset>
+          </form>
+        </article>
+        <article>
+          <h1>Todo list</h1>
+          <ul id="todos"></ul>
+        </article>
+        <button onclick="getAllTodos()">Get All Todos</button>
+      </section>
     </main>
     <footer>
-        <p>&copy; Todo App</p>
+      <p>&copy; Todo App</p>
     </footer>
     <script src="./index.js"></script>
-</body>
-
+  </body>
 </html>
